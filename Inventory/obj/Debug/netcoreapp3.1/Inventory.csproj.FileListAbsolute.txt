@@ -51,3 +51,5 @@ D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo We
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.CopyComplete
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\BlazorPages\Form001.razor.g.cs
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\BlazorPages\Form001.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\Forms\Form002.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\Forms\Form002.razor.g.cs
