@@ -1,7 +1,11 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<h3>Modificaciones en doble via</h3>
+<input type="text" @bind-value="@message"/>
+<div>
+    @message
+</div>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code{
+    string message = "Hello World";
+} 
