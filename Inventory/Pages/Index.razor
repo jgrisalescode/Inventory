@@ -1,11 +1,6 @@
 ﻿@page "/"
 
-<h3>Modificaciones en doble via</h3>
-<input type="text" @bind-value="@message"/>
-<div>
-    @message
-</div>
-
-@code{
-    string message = "Hello World";
-} 
+<!--Invoncando un componente-->
+<Form001 Message="Saludo"/>
+<Form001 Message="Un texto diferente"/>
+<Form001 Message="Otro texto"/>
