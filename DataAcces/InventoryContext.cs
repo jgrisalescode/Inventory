@@ -30,5 +30,26 @@ namespace DataAcces
                 options.UseSqlServer("Server=LOCKED-ACER; Database=InventoryDb; User Id=sa; Password=toor");
             }
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Alimentamos con datos dummy para tener con que trabajar
+            modelBuilder.Entity<CategoryEntity>().HasData(
+                new CategoryEntity { CategoryId = "ASH", CategoryName = "Aseo Hogar"},
+                new CategoryEntity { CategoryId = "ASP", CategoryName = "Aseo Personal"},
+                new CategoryEntity { CategoryId = "HGR", CategoryName = "Hogar"},
+                new CategoryEntity { CategoryId = "PRF", CategoryName = "Perfumería"},
+                new CategoryEntity { CategoryId = "SLD", CategoryName = "Salud"},
+                new CategoryEntity { CategoryId = "VDJ", CategoryName = "Video Juegos"}
+                );
+
+            modelBuilder.Entity<WarehouseEntity>().HasData(
+                new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Central", WarehouseAddress = "Calle Mayor"},
+                new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Norte", WarehouseAddress = "Calle Palma"},
+                new WarehouseEntity { WarehouseId = Guid.NewGuid().ToString(), WarehouseName = "Bodega Sur", WarehouseAddress = "Calle Menor"}
+                );
+        }
     }
 }
