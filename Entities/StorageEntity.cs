@@ -22,8 +22,8 @@ namespace Entities
         public ProductEntity Product { get; set; } // Navegación
 
         // Relación con bodegas (WherehouseEntity)
-        public string WherehouseId { get; set; } // La FK con el mismo nombre de la PK
-        public WherehouseEntity Wherehouse { get; set; } // Navegación
+        public string WarehouseId { get; set; } // La FK con el mismo nombre de la PK
+        public WarehouseEntity Warehouse { get; set; } // Navegación
 
         // Relacion con salidas y entradas (InputOutputEntity)
         public ICollection<InputOutputEntity> InputOutputs { get; set; }
