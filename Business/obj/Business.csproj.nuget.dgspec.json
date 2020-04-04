@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj": {}
+    "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj": {}
   },
   "projects": {
     "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj": {
@@ -188,71 +188,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj",
-        "projectName": "Inventory",
-        "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj",
-        "packagesPath": "C:\\Users\\jgris\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\jgris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj": {
-                "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj"
-              },
-              "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Entities\\Entities.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

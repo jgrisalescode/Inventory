@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w2ckaTe12RgZrNJk/fBBn/l5k8MI4n2FE7oqZiSZKd9CBG/wGqEmVhvtV8lNZ1Rd5yDDD70gZeJNXLJLNPQSBA==",
+  "dgSpecHash": "cuj5eJsrTGlJIfgDm+MDjHG4fuuY/2m3SUVC0qQ/oewEahvFdpW838ylGg3oJYEY9YJW8/+2+AwPB5+B/6lZ/w==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj",
+  "projectFilePath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jgris\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\jgris\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

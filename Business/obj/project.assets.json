@@ -1253,20 +1253,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "DataAcces": "1.0.0",
-          "Entities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Business.dll": {}
-        }
-      },
       "DataAcces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -4908,11 +4894,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Business/1.0.0": {
-      "type": "project",
-      "path": "../Business/Business.csproj",
-      "msbuildProject": "../Business/Business.csproj"
-    },
     "DataAcces/1.0.0": {
       "type": "project",
       "path": "../DataAcces/DataAcces.csproj",
@@ -4926,7 +4907,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Business >= 1.0.0",
+      "DataAcces >= 1.0.0",
       "Entities >= 1.0.0"
     ]
   },
@@ -4937,11 +4918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj",
-      "projectName": "Inventory",
-      "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj",
+      "projectName": "Business",
+      "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\jgris\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Inventory\\obj\\",
+      "outputPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4960,8 +4941,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj": {
-              "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Business\\Business.csproj"
+            "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\DataAcces\\DataAcces.csproj": {
+              "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\DataAcces\\DataAcces.csproj"
             },
             "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Entities\\Entities.csproj": {
               "projectPath": "D:\\Documents\\Cursos\\Platsy\\Desarrollo de Aplicaciones con ASP .NET\\Desarrollo Web con Blazor y .NET\\Inventory\\Entities\\Entities.csproj"
@@ -4988,9 +4969,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
