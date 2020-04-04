@@ -19,5 +19,16 @@ namespace DataAcces
         public DbSet<StorageEntity> Storages { get; set; }
         public DbSet<WarehouseEntity> Warehouses { get; set; }
         public DbSet<InputOutputEntity> InOuts { get; set; }
+
+        // Conexión a BD en SQLServer
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            // Creamos la cadena de conexión, nos aseugramos que no esta creada en otra parte
+            if (!options.IsConfigured)
+            {
+                // Busca en el gestor de paquetes el conector para el Framwork de SQLServer
+                options.UseSqlServer("Server=LOCKED-ACER; Database=InventoryDb; User Id=sa; Password=toor");
+            }
+        }
     }
 }
