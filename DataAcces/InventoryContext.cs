@@ -27,7 +27,11 @@ namespace DataAcces
             if (!options.IsConfigured)
             {
                 // Busca en el gestor de paquetes el conector para el Framwork de SQLServer
-                options.UseSqlServer("Server=LOCKED-ACER; Database=InventoryDb; User Id=sa; Password=toor");
+                /*
+                 * connectionString
+                 * Server=[SERVERNAME]; Database=InventoryDb; User Id=[USER]; Password=[PASSWORD]
+                 */
+                options.UseSqlServer(DataAccessConfig.connectionString);
             }
         }
 
