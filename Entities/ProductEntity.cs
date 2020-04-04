@@ -16,5 +16,12 @@ namespace Entities
         [StringLength(600)]
         public string ProductDescription { get; set; }
         public int TotalQuantity { get; set; }
+
+        // Relación con categorías (CategoryEntity)
+        public string CaregoryId { get; set; } // PK de (CategoryEntity)
+        public CategoryEntity Category { get; set; } // Navegación
+
+        // Relación con almacenamiento (SotorageEntity)
+        public ICollection<StorageEntity> Storages { get; set; } // Navegación
     }
 }

@@ -15,5 +15,7 @@ namespace Entities
         [StringLength(100)]
         public string CategoryName { get; set; }
 
+        // Navegación Un categoría puede estar en muchos productos
+        public ICollection<ProductEntity> Products { get; set; }
     }
 }
