@@ -9,7 +9,7 @@ namespace Business
 {
     public class B_Category
     {
-        public List<CategoryEntity> CategoryList()
+        public static List<CategoryEntity> CategoryList()
         {
             // using para el ciclo de vida de esta operación así no dejamos conexiones abiertas
             using (var db = new InventoryContext())

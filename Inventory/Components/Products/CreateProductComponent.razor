@@ -4,27 +4,44 @@
 <div>
     <!--Etiquetas de c# para formualarios-->
     <EditForm Model="newProduct">
-        <div class="form-control">
+        <div class="form-group">
             <label>Referencia: </label>
             <InputText @bind-Value="newProduct.ProductId" class="form-control"/>
         </div>
-        <div class="form-control">
+        <div class="form-group">
             <label>Nombre producto: </label>
             <InputText @bind-Value="newProduct.ProductName" class="form-control"/>
         </div>
-        <div class="form-control">
+        <div class="form-group">
             <label>Descripción: </label>
             <InputTextArea @bind-Value="newProduct.ProductDescription" class="form-control"/>
         </div>
-        <input type="button" value="Guardar" @onclick="SaveProduct"/>
+        <!--Agrgado la categoría-->
+        <div class="form-group">
+            <label>Categoría</label>
+            <InputSelect @bind-Value="newProduct.CaregoryId" class="form-control">
+                @foreach (var category in categories)
+                {
+                    <option value="@category.CategoryId">@category.CategoryName</option>
+                }
+            </InputSelect>
+        </div>
+        <input type="button" value="Guardar" @onclick="SaveProduct" class="btn btn-primary"/>
     </EditForm>
 </div>
 
 @code {
     ProductEntity newProduct = new ProductEntity();
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = B_Category.CategoryList();
+    }
 
     private void SaveProduct()
     {
+        // Puse los métodos static
         B_Product.CreateProduct(newProduct);
     }
 }
