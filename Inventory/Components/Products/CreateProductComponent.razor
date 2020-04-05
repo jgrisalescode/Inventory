@@ -1,5 +1,30 @@
-﻿
+﻿@using Entities
+@using Business
+
+<div>
+    <!--Etiquetas de c# para formualarios-->
+    <EditForm Model="newProduct">
+        <div class="form-control">
+            <label>Referencia: </label>
+            <InputText @bind-Value="newProduct.ProductId" class="form-control"/>
+        </div>
+        <div class="form-control">
+            <label>Nombre producto: </label>
+            <InputText @bind-Value="newProduct.ProductName" class="form-control"/>
+        </div>
+        <div class="form-control">
+            <label>Descripción: </label>
+            <InputTextArea @bind-Value="newProduct.ProductDescription" class="form-control"/>
+        </div>
+        <input type="button" value="Guardar" @onclick="SaveProduct"/>
+    </EditForm>
+</div>
 
 @code {
+    ProductEntity newProduct = new ProductEntity();
 
+    private void SaveProduct()
+    {
+        B_Product.CreateProduct(newProduct);
+    }
 }
