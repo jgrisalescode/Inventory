@@ -91,3 +91,5 @@ D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo We
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\bin\Debug\netcoreapp3.1\DataAcces.pdb
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\CreateProductComponent.razor.g.cs
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\CreateProductComponent.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\ListProductsComponent.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\ListProductsComponent.razor.g.cs
