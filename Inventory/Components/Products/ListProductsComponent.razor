@@ -1,6 +1,14 @@
 ﻿@using Entities
 @using Business
 
+<select class="form-control" @onchange="CategoryChanged">
+    <option value="">Seleccione categoria</option>
+    @foreach (var categoty in categories)
+    {
+        <option value="@categoty.CategoryId">@categoty.CategoryName</option>
+    }
+</select>
+
 <table class="table table-hover table-bordered">
     <thead>
         <tr>
@@ -10,7 +18,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var product in products)
+        @foreach (var product in productsFiltred)
         {
             <tr>
                 <td>@product.ProductId</td>
@@ -21,11 +29,26 @@
     </tbody>
 </table>
 
+
 @code {
     List<ProductEntity> products = new List<ProductEntity>();
+    List<ProductEntity> productsFiltred = new List<ProductEntity>();
+
+    // Filtrando por categorías
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+    string message; // Probando cambios en el evento
 
     protected override async Task OnInitializedAsync()
     {
         products = B_Product.ProductsList();
+        productsFiltred = products;
+        // Evito tener que llamar a la BD siempre que se haga un filtro y mejor en memoria
+        categories = B_Category.CategoryList();
+    }
+
+    private void CategoryChanged(ChangeEventArgs e)
+    {
+        // message = e.Value.ToString();
+        productsFiltred = products.Where(category => category.CaregoryId == e.Value.ToString()).ToList();
     }
 }
