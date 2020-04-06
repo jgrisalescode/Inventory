@@ -9,7 +9,7 @@ namespace Business
 {
     public class B_Warehouse
     {
-        public List<WarehouseEntity> WarehousesList()
+        public static List<WarehouseEntity> WarehousesList()
         {
             using (var db = new InventoryContext())
             {
@@ -17,7 +17,7 @@ namespace Business
             }
         }
 
-        public void CreateWarehouse(WarehouseEntity newWarehouse)
+        public static void CreateWarehouse(WarehouseEntity newWarehouse)
         {
             using (var db = new InventoryContext())
             {
@@ -26,7 +26,15 @@ namespace Business
             }
         }
 
-        public void UpdateWarehouse(WarehouseEntity warehouse)
+        public static WarehouseEntity GetWarehouseById(string id)
+        {
+            using (var db = new InventoryContext())
+            {
+                return db.Warehouses.ToList().LastOrDefault(w => w.WarehouseId == id);
+            }
+        }
+
+        public static void UpdateWarehouse(WarehouseEntity warehouse)
         {
             using (var db = new InventoryContext())
             {

@@ -104,6 +104,13 @@ using Inventory.Components.Categories;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Warehouses;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
