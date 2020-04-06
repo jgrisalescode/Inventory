@@ -1,6 +1,9 @@
 ﻿@using Entities
 @using Business
 
+<!--Inyección de dependencias / Injectando un objeto del tipo NaivationManager-->
+@inject NavigationManager NavManager
+
 <div>
     <!--Etiquetas de c# para formualarios-->
     <EditForm Model="newProduct">
@@ -43,5 +46,7 @@
     {
         // Puse los métodos static
         B_Product.CreateProduct(newProduct);
+        // Redireccionamiento
+        NavManager.NavigateTo("product/list");
     }
 }

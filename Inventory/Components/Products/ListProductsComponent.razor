@@ -1,6 +1,7 @@
 ﻿@using Entities
 @using Business
 
+<hr />
 <select class="form-control" @onchange="CategoryChanged">
     <option value="">Seleccione categoria</option>
     @foreach (var categoty in categories)
@@ -8,7 +9,7 @@
         <option value="@categoty.CategoryId">@categoty.CategoryName</option>
     }
 </select>
-
+<hr />
 <table class="table table-hover table-bordered">
     <thead>
         <tr>
