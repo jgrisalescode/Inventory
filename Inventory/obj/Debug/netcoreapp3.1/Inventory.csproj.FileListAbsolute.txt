@@ -127,3 +127,5 @@ D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo We
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Warehouses\UpdateWarehousePage.razor.g.cs
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Storages\CreateStorageComponent.razor.g.cs
 D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Storages\CreateStorageComponent.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Storages\CreateStoragePage.razor.g.cs
+D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Storages\CreateStoragePage.razor.g.cs

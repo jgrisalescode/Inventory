@@ -108,6 +108,13 @@ using Inventory.Components.Warehouses;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Storages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\Pages\FetchData.razor"
 using Inventory.Data;
 
