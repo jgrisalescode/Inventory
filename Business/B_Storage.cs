@@ -17,7 +17,7 @@ namespace Business
             }
         }
 
-        public void CreateStorage(StorageEntity newStorage)
+        public static void CreateStorage(StorageEntity newStorage)
         {
             using (var db = new InventoryContext())
             {

@@ -1,0 +1,47 @@
+﻿@using Entities
+@using Business
+
+    <EditForm Model="newStorage">
+        <div class="form-control">
+            <label>Bodega:</label>
+            <InputSelect @bind-Value="@newStorage.WarehouseId">
+                <option value="">Seleccione una bodega</option>
+                @foreach (var warehose in warehouses)
+                {
+                    <option value="@warehose.WarehouseId">@warehose.WarehouseName</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="form-control">
+            <label>Producto:</label>
+            <InputSelect @bind-Value="@newStorage.ProductId">
+                <option value="">Seleccione un producto</option>
+                @foreach (var product in products)
+                {
+                    <option value="@product.ProductId">@product.ProductName</option>
+                }
+            </InputSelect>
+        </div>
+        <input type="button" value="Almacenar producto" @onclick="SaveStorage"/>
+    </EditForm>
+
+@code {
+    StorageEntity newStorage = new StorageEntity();
+    // Lamamos a las bodegas y los productos
+    List<WarehouseEntity> warehouses = new List<WarehouseEntity>();
+    List<ProductEntity> products = new List<ProductEntity>();
+
+    // Cargamos las listas al iniciar el componente
+    protected override async Task OnInitializedAsync()
+    {
+        warehouses = B_Warehouse.WarehousesList();
+        products = B_Product.ProductsList();
+    }
+
+    private void SaveStorage()
+    {
+        newStorage.LastUpdate = DateTime.Now;
+        newStorage.StorageId = Guid.NewGuid().ToString();
+        B_Storage.CreateStorage(newStorage);
+    }
+}
