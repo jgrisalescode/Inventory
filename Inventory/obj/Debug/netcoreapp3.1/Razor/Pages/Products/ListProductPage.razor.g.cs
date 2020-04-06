@@ -93,6 +93,13 @@ using Inventory.Components.Products;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "D:\Documents\Cursos\Platsy\Desarrollo de Aplicaciones con ASP .NET\Desarrollo Web con Blazor y .NET\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Categories;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/product/list")]
     public partial class ListProductPage : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -18,7 +18,7 @@ namespace Business
             }
         }
 
-        public void CreateCategory(CategoryEntity newCategory)
+        public static void CreateCategory(CategoryEntity newCategory)
         {
             using (var db = new InventoryContext())
             {
@@ -27,7 +27,15 @@ namespace Business
             }
         }
 
-        public void UpdateCategory(CategoryEntity category)
+        public static CategoryEntity GetCategoryById(string id)
+        {
+            using (var db = new InventoryContext())
+            {
+                return db.Categories.ToList().LastOrDefault(c => c.CategoryId == id); 
+            }
+        }
+
+        public static void UpdateCategory(CategoryEntity category)
         {
             using (var db = new InventoryContext())
             {
