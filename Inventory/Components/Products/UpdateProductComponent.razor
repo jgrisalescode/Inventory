@@ -1,6 +1,7 @@
 ﻿@using Business
 @using Entities
 
+@inject NavigationManager NavManager
 
 <!--Formulario para trabajar con un modelo, gracias a EditForm de c#-->
 <EditForm Model="product">
@@ -21,6 +22,7 @@
             }
         </InputSelect>
     </div>
+    <input type="button" value="Editar producto" class="btn btn-primary" @onclick="UpdateProducto" />
 </EditForm>
 
 @code {
@@ -38,5 +40,11 @@
         categories = B_Category.CategoryList();
         // Llmar al producto que va a ser actualializado
         product = B_Product.GetProductById(IdProduct);
+    }
+
+    private void UpdateProducto()
+    {
+        B_Product.UpdateProduct(product);
+        NavManager.NavigateTo("product/list");
     }
 }
