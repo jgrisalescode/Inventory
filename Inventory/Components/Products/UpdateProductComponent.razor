@@ -1,0 +1,42 @@
+﻿@using Business
+@using Entities
+
+
+<!--Formulario para trabajar con un modelo, gracias a EditForm de c#-->
+<EditForm Model="product">
+    <div class="form-group">
+        <label>Producto:</label>
+        <InputText class="form-control" @bind-Value="product.ProductName"/>
+    </div>
+    <div class="form-group">
+        <label>Descripción:</label>
+        <InputTextArea class="form-control" @bind-Value="product.ProductDescription"/>
+    </div>
+    <div class="form-group">
+        <label>Categoría:</label>
+        <InputSelect class="form-control" @bind-Value="product.CaregoryId">
+            @foreach (var category in categories)
+            {
+                <option value="@category.CategoryId">@category.CategoryName</option>
+            }
+        </InputSelect>
+    </div>
+</EditForm>
+
+@code {
+
+    // Parámetro para consultar el producto que viene por la URL
+    [Parameter]
+    public string IdProduct { get; set; }
+
+    ProductEntity product = new ProductEntity();
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+
+    // Cargar las categorías por primera vez sin refrescar la página
+    protected override async Task OnInitializedAsync()
+    {
+        categories = B_Category.CategoryList();
+        // Llmar al producto que va a ser actualializado
+        product = B_Product.GetProductById(IdProduct);
+    }
+}
